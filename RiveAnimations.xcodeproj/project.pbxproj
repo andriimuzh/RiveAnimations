@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EF1087AC28534E3700322DB6 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1087AB28534E3700322DB6 /* CustomFont.swift */; };
+		EF1087AF28536EE800322DB6 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1087AE28536EE800322DB6 /* SignInView.swift */; };
+		EF1087B128538F2700322DB6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1087B028538F2700322DB6 /* CustomTextField.swift */; };
+		EFC53A2C28587C5200CC55C9 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC53A2B28587C5200CC55C9 /* CornerRadius.swift */; };
+		EFC53A2E285887EE00CC55C9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC53A2D285887EE00CC55C9 /* Extensions.swift */; };
 		EFE63365285209F90075C55B /* RiveAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE63364285209F90075C55B /* RiveAnimationsApp.swift */; };
 		EFE63367285209F90075C55B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE63366285209F90075C55B /* ContentView.swift */; };
 		EFE63369285209FA0075C55B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE63368285209FA0075C55B /* Assets.xcassets */; };
@@ -28,6 +32,10 @@
 
 /* Begin PBXFileReference section */
 		EF1087AB28534E3700322DB6 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		EF1087AE28536EE800322DB6 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		EF1087B028538F2700322DB6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EFC53A2B28587C5200CC55C9 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		EFC53A2D285887EE00CC55C9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFE63361285209F90075C55B /* RiveAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiveAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE63364285209F90075C55B /* RiveAnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiveAnimationsApp.swift; sourceTree = "<group>"; };
 		EFE63366285209F90075C55B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +67,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF1087AD28536ECF00322DB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFE633812852114F0075C55B /* OnboardingView.swift */,
+				EF1087AE28536EE800322DB6 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFC53A2A28587A1300CC55C9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF1087B028538F2700322DB6 /* CustomTextField.swift */,
+				EF1087AB28534E3700322DB6 /* CustomFont.swift */,
+				EFC53A2B28587C5200CC55C9 /* CornerRadius.swift */,
+				EFC53A2D285887EE00CC55C9 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		EFE63358285209F90075C55B = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +110,8 @@
 				EFE6338628521DDF0075C55B /* Fonts */,
 				EFE63364285209F90075C55B /* RiveAnimationsApp.swift */,
 				EFE63366285209F90075C55B /* ContentView.swift */,
-				EFE633812852114F0075C55B /* OnboardingView.swift */,
-				EF1087AB28534E3700322DB6 /* CustomFont.swift */,
+				EFC53A2A28587A1300CC55C9 /* Helpers */,
+				EF1087AD28536ECF00322DB6 /* Views */,
 				EFE63368285209FA0075C55B /* Assets.xcassets */,
 				EFE6337228520B980075C55B /* RiveAssets */,
 				EFE6336A285209FA0075C55B /* Preview Content */,
@@ -211,8 +239,12 @@
 			files = (
 				EFE633822852114F0075C55B /* OnboardingView.swift in Sources */,
 				EF1087AC28534E3700322DB6 /* CustomFont.swift in Sources */,
+				EF1087B128538F2700322DB6 /* CustomTextField.swift in Sources */,
+				EFC53A2E285887EE00CC55C9 /* Extensions.swift in Sources */,
 				EFE63367285209F90075C55B /* ContentView.swift in Sources */,
 				EFE63365285209F90075C55B /* RiveAnimationsApp.swift in Sources */,
+				EFC53A2C28587C5200CC55C9 /* CornerRadius.swift in Sources */,
+				EF1087AF28536EE800322DB6 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

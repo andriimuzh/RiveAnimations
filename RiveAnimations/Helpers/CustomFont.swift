@@ -12,34 +12,36 @@ struct CustomFont: ViewModifier {
     
     var name: String {
         switch textStyle {
-        case .mainTitle, .largeTitle, .title, .title2, .title3:
+        case .title1, .title2, .title3, .title4, .title5, .title6:
             return "Poppins Bold"
-        case .body, .subheadline, .footnote, .caption:
+        case .body, .subhead, .footnote, .caption:
             return "Inter Regular"
-        case .headline, .subheadline2, .footnote2, .caption2:
+        case .headline, .subhead2, .footnote2, .caption2:
             return "Inter SemiBold"
         }
     }
     
     var size: CGFloat {
         switch textStyle {
-        case .mainTitle:
+        case .title1:
             return 60
-        case .largeTitle:
-            return 34
-        case .title:
-            return 28
         case .title2:
-            return 24
+            return 40
         case .title3:
+            return 34
+        case .title4:
+            return 28
+        case .title5:
+            return 24
+        case .title6:
             return 20
         case .body:
             return 17
         case .headline:
             return 17
-        case .subheadline:
+        case .subhead:
             return 15
-        case .subheadline2:
+        case .subhead2:
             return 15
         case .footnote:
             return 13
@@ -54,23 +56,25 @@ struct CustomFont: ViewModifier {
     
     var relative: Font.TextStyle {
         switch textStyle {
-        case .mainTitle:
+        case .title1:
             return .largeTitle
-        case .largeTitle:
-            return .largeTitle
-        case .title:
-            return .title
         case .title2:
-            return .title2
+            return .largeTitle
         case .title3:
+            return .title
+        case .title4:
+            return .title
+        case .title5:
+            return .title2
+        case .title6:
             return .title3
         case .body:
             return .body
         case .headline:
             return .headline
-        case .subheadline:
+        case .subhead:
             return .subheadline
-        case .subheadline2:
+        case .subhead2:
             return .subheadline
         case .footnote:
             return .footnote
@@ -97,15 +101,16 @@ extension View {
 
 
 enum TextStyle {
-    case mainTitle
-    case largeTitle
-    case title
+    case title1
     case title2
     case title3
+    case title4
+    case title5
+    case title6
     case body
     case headline
-    case subheadline
-    case subheadline2
+    case subhead
+    case subhead2
     case footnote
     case footnote2
     case caption
