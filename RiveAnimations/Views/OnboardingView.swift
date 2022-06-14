@@ -23,13 +23,14 @@ struct OnboardingView: View {
                 Color("Shadow")
                     .opacity(0.4)
                     .ignoresSafeArea()
-                SignInView()
+                SignInView(showModal: $showModal)
                     .offset(y: dragAmount)
                     .overlay(
                         Button {
                             withAnimation(.spring()) {
                                 showModal = false
                             }
+                            hideKeyboard()
                         } label: {
                             Image(systemName: "xmark")
                                 .frame(width: 36, height: 36)
@@ -53,6 +54,7 @@ struct OnboardingView: View {
                                         withAnimation(.spring()) {
                                             showModal = false
                                         }
+                                        hideKeyboard()
                                         dragAmount = CGFloat.zero
                                     }
                                 }

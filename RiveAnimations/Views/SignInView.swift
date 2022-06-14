@@ -6,10 +6,43 @@
 //
 
 import SwiftUI
+import RiveRuntime
 
 struct SignInView: View {
     @State private var email = ""
     @State private var password = ""
+    @State private var isLoading = false
+    @Binding var showModal: Bool
+    
+    let check = RiveViewModel(fileName: "check", stateMachineName: "State Machine 1")
+    let confetti = RiveViewModel(fileName: "confetti", stateMachineName: "State Machine 1")
+    
+    func logIn () {
+        isLoading = true
+        
+        if(email != "") {
+            isLoading = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                check.triggerInput("Check")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+               isLoading = false
+                confetti.triggerInput("Trigger explosion")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                withAnimation{
+                    showModal = false
+                }
+            }
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                check.triggerInput("Error")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+               isLoading = false
+            }
+        }
+    }
     
     var body: some View {
         VStack(spacing: 24) {
@@ -24,6 +57,7 @@ struct SignInView: View {
                     .foregroundColor(.secondary)
                 TextField("", text: $email)
                     .customTextFiled(iconName: .Email)
+                    .onTapGesture {}
             }
             VStack(alignment: .leading, spacing: 8) {
                 Text("Password")
@@ -31,10 +65,11 @@ struct SignInView: View {
                     .foregroundColor(.secondary)
                 SecureField("", text: $password)
                     .customTextFiled(iconName: .Password)
+                    .onTapGesture {}
             }
             
             Button {
-                
+               logIn()
             } label: {
                 HStack {
                     Image(systemName: "arrow.right")
@@ -84,14 +119,29 @@ struct SignInView: View {
         .shadow(color: Color("Shadow").opacity(0.3), radius: 30, x: 0, y: 30)
         .overlay(
             RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .stroke(.linearGradient(colors: [.white.opacity(0.9), .white.opacity(0.1)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .stroke(
+                    .linearGradient(
+                        colors: [.white.opacity(0.9), .white.opacity(0.1)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                )
         )
         .padding()
+        .overlay(
+            ZStack {
+                if isLoading {
+                    check.view()
+                        .frame(width: 75, height: 75)
+                        .allowsHitTesting(false)
+                }
+                confetti.view()
+                    .scaleEffect(2)
+                    .allowsHitTesting(false)
+            }
+        )
     }
 }
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignInView(showModal: .constant(false))
     }
 }
