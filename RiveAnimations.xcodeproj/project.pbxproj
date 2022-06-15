@@ -15,6 +15,7 @@
 		EF68B7AE2859EB45002D9833 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68B7AC2859EB45002D9833 /* Course.swift */; };
 		EF68B7B02859EBA5002D9833 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68B7AF2859EBA5002D9833 /* VCard.swift */; };
 		EF68B7B22859FB79002D9833 /* HCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68B7B12859FB79002D9833 /* HCard.swift */; };
+		EF68B7B42859FDC7002D9833 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68B7B32859FDC7002D9833 /* HomeView.swift */; };
 		EFC53A2C28587C5200CC55C9 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC53A2B28587C5200CC55C9 /* CornerRadius.swift */; };
 		EFC53A2E285887EE00CC55C9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC53A2D285887EE00CC55C9 /* Extensions.swift */; };
 		EFE63365285209F90075C55B /* RiveAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE63364285209F90075C55B /* RiveAnimationsApp.swift */; };
@@ -44,6 +45,7 @@
 		EF68B7AC2859EB45002D9833 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		EF68B7AF2859EBA5002D9833 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
 		EF68B7B12859FB79002D9833 /* HCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCard.swift; sourceTree = "<group>"; };
+		EF68B7B32859FDC7002D9833 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EFC53A2B28587C5200CC55C9 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		EFC53A2D285887EE00CC55C9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFE63361285209F90075C55B /* RiveAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiveAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 				EF3075D32858C14C003B45BF /* BottomTabBar.swift */,
 				EF68B7AF2859EBA5002D9833 /* VCard.swift */,
 				EF68B7B12859FB79002D9833 /* HCard.swift */,
+				EF68B7B32859FDC7002D9833 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF68B7B22859FB79002D9833 /* HCard.swift in Sources */,
+				EF68B7B42859FDC7002D9833 /* HomeView.swift in Sources */,
 				EFE633822852114F0075C55B /* OnboardingView.swift in Sources */,
 				EF68B7AE2859EB45002D9833 /* Course.swift in Sources */,
 				EF1087AC28534E3700322DB6 /* CustomFont.swift in Sources */,

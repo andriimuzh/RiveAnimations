@@ -12,21 +12,30 @@ struct ContentView: View {
     @AppStorage("selectedTab") var selectedTab: Tab = .chat
     @State private var isOpen = false
     let button = RiveViewModel(fileName: "menu_button", stateMachineName: "State Machine", autoPlay: false)
-
+    
     var body: some View {
         ZStack {
-            switch selectedTab {
-            case .chat:
-                Text("chat")
-            case .search:
-                Text("search")
-            case .timer:
-                Text("timer")
-            case .bell:
-                Text("bell")
-            case .user:
-                Text("user")
+            Group {
+                switch selectedTab {
+                case .chat:
+                    HomeView()
+                case .search:
+                    Text("search")
+                case .timer:
+                    Text("timer")
+                case .bell:
+                    Text("bell")
+                case .user:
+                    Text("user")
+                }
             }
+            .safeAreaInset(edge: .bottom) {
+                Color.clear.frame(height: 80)
+            }
+            .safeAreaInset(edge: .top) {
+                Color.clear.frame(height: 104)
+            }
+            .ignoresSafeArea()
             button.view()
                 .frame(width: 44, height: 44)
                 .mask(Circle())
@@ -39,7 +48,6 @@ struct ContentView: View {
                 }
             BottomTabBar()
         }
-      
     }
 }
 
