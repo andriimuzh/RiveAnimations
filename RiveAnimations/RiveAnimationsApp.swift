@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct RiveAnimationsApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

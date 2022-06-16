@@ -79,10 +79,25 @@ struct ContentView: View {
                         isOpen.toggle()
                     }
                 }
+                .onChange(of: isOpen) { newValue in
+                    if newValue {
+                        UIApplication.shared.setStatusBarStyle(.lightContent, animated: true)
+                    } else {
+                        UIApplication.shared.setStatusBarStyle(.darkContent, animated: true)
+                    }
+                }
+            
             BottomTabBar()
                 .offset(y: isOpen ? 150 : 0)
                 .offset(y: showOnboarding ? 150 : 0)
+                .offset(y: -44)
                 .opacity(isOpen ? 0 : 1)
+                .background(LinearGradient(colors: [Color("Background").opacity(0), Color("Background")], startPoint: .top, endPoint: .bottom)
+                    .allowsHitTesting(false)
+                )
+                .frame(height: 150)
+                .frame(maxHeight: .infinity, alignment: .bottom)
+                .ignoresSafeArea()
             
             if showOnboarding {
                 OnboardingView(showOnboarding: $showOnboarding)
