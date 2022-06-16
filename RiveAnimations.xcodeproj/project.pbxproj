@@ -16,8 +16,10 @@
 		EF68B7B02859EBA5002D9833 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68B7AF2859EBA5002D9833 /* VCard.swift */; };
 		EF68B7B22859FB79002D9833 /* HCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68B7B12859FB79002D9833 /* HCard.swift */; };
 		EF68B7B42859FDC7002D9833 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68B7B32859FDC7002D9833 /* HomeView.swift */; };
+		EF68B7B6285A0390002D9833 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68B7B5285A0390002D9833 /* SideMenu.swift */; };
 		EFC53A2C28587C5200CC55C9 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC53A2B28587C5200CC55C9 /* CornerRadius.swift */; };
 		EFC53A2E285887EE00CC55C9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC53A2D285887EE00CC55C9 /* Extensions.swift */; };
+		EFDCC967285B3E700005223D /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDCC966285B3E700005223D /* MenuRow.swift */; };
 		EFE63365285209F90075C55B /* RiveAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE63364285209F90075C55B /* RiveAnimationsApp.swift */; };
 		EFE63367285209F90075C55B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE63366285209F90075C55B /* ContentView.swift */; };
 		EFE63369285209FA0075C55B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE63368285209FA0075C55B /* Assets.xcassets */; };
@@ -46,8 +48,10 @@
 		EF68B7AF2859EBA5002D9833 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
 		EF68B7B12859FB79002D9833 /* HCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCard.swift; sourceTree = "<group>"; };
 		EF68B7B32859FDC7002D9833 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EF68B7B5285A0390002D9833 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		EFC53A2B28587C5200CC55C9 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		EFC53A2D285887EE00CC55C9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EFDCC966285B3E700005223D /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
 		EFE63361285209F90075C55B /* RiveAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiveAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE63364285209F90075C55B /* RiveAnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiveAnimationsApp.swift; sourceTree = "<group>"; };
 		EFE63366285209F90075C55B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				EF68B7AF2859EBA5002D9833 /* VCard.swift */,
 				EF68B7B12859FB79002D9833 /* HCard.swift */,
 				EF68B7B32859FDC7002D9833 /* HomeView.swift */,
+				EF68B7B5285A0390002D9833 /* SideMenu.swift */,
+				EFDCC966285B3E700005223D /* MenuRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 				EFE633822852114F0075C55B /* OnboardingView.swift in Sources */,
 				EF68B7AE2859EB45002D9833 /* Course.swift in Sources */,
 				EF1087AC28534E3700322DB6 /* CustomFont.swift in Sources */,
+				EFDCC967285B3E700005223D /* MenuRow.swift in Sources */,
 				EF1087B128538F2700322DB6 /* CustomTextField.swift in Sources */,
 				EF3075D42858C14C003B45BF /* BottomTabBar.swift in Sources */,
 				EF68B7AD2859EB45002D9833 /* CourseSection.swift in Sources */,
@@ -275,6 +282,7 @@
 				EFC53A2E285887EE00CC55C9 /* Extensions.swift in Sources */,
 				EFE63367285209F90075C55B /* ContentView.swift in Sources */,
 				EFE63365285209F90075C55B /* RiveAnimationsApp.swift in Sources */,
+				EF68B7B6285A0390002D9833 /* SideMenu.swift in Sources */,
 				EFC53A2C28587C5200CC55C9 /* CornerRadius.swift in Sources */,
 				EF1087AF28536EE800322DB6 /* SignInView.swift in Sources */,
 			);
